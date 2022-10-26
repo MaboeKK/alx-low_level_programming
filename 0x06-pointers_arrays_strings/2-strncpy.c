@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - joins two strings together
+ * _strncpy - joins two strings together
  * @dest: destination
  * @src: string source
  * @n: number of string characters to be copied to string destination
