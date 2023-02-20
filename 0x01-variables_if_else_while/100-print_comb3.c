@@ -1,32 +1,45 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
- * main - Entry point
- * @void: parameter
- * Return: 0
+ * main - all possible different combinatons of two digit
+ * Description: print all numbers from 01-09, and from
+ * 12 to 89 separated with whitespaces and commas.
+ *
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
+int i;
+int j;
 
-	for (tens = '0'; tens <= '9'; tens++)
+i = 48;
+j = 49;
+while  ((i < 57) && (j < 58))
+{
+	putchar(i);
+	putchar(j);
+	if ((i == 56) && (j == 57))
 	{
-	for (ones = '0'; ones <= '9'; ones++)
+		putchar('\n');
+		i++;
+		j++;
+	}
+	else
 	{
-		if (!((ones == tens) || (tens < ones)))
+		putchar(44);
+		putchar(32);
+		if (j < 57)
 		{
-			putchar(tens);
-			putchar(ones);
-			if (!(ones == '9' && tens == '8'))
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			j++;
+		}
+		else
+		{
+			i++;
+			j = 1 + i;
 		}
 	}
-	}
-
-	putchar('\n');
-	return (0);
+}
+return (0);
 }	
