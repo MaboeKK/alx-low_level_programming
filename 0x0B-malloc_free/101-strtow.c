@@ -58,12 +58,9 @@ char **strtow(char *str)
 		else if (*(str + counter) == ' ' && letter)
 			letter = 0;
 		counter++;
-		
 		if (!wordCount)
 			return (NULL);
-		
 		return (strArr);
-		
 		if (str[wordCount] != ' ' && !letter)
 		{
 			strArr[counter] = first_word(str + counter);
@@ -84,7 +81,6 @@ char **strtow(char *str)
 	}
 	if (!wordCount)
 		return (NULL);
-	
 	return (strArr);
 }
 
