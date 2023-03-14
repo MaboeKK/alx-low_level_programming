@@ -2,16 +2,17 @@
 
 /**
  * _puts_recursion - Prints string then adds new line
- * @s: string variable
- * Return: 1
- * Exeption, on error -1 is returned.
+ * @s: string variable.
+ *
+ * Return: nothing.
  */
 void _puts_recursion(char *s)
 {
-	if (*s == 0)
+	if (*s)
 	{
 		_putchar(*s);
-		_puts_recursion(s + 1);
+		s++;
+		_puts_recursion(s);
 	}
 	else
 		_putchar('\n');
