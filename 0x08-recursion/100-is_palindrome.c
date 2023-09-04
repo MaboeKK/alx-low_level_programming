@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-  * _lenght - length of a string
-  * @s: the string
-  * Return: length of the string
-**/
+ * _lenght - length of a string
+ * @s: the string
+ * Return: length of the string
+ */
 int _lenght(char *s)
 {
 	if (*s == '\0')
@@ -17,7 +17,7 @@ int _lenght(char *s)
  * @lg: the length of the string
  * @s: the string
  * Return: 1 if polindrome, 0 if not
-**/
+ */
 int checkp(int i, int lg, char *s)
 {
 	if (lg > 0)
@@ -37,13 +37,11 @@ int checkp(int i, int lg, char *s)
 	}
 	return (1);
 }
-
-
 /**
-  * is_palindrome - Checks if a string is a palindrome
-  * @s: is the string
-  * Return: return 1 if the string is a palindrome or 0 otherwise
-**/
+ * is_palindrome - Checks if a string is a palindrome
+ * @s: is the string
+ * Return: return 1 if the string is a palindrome or 0 otherwise
+ */
 int is_palindrome(char *s)
 {
 	return (checkp(0, _lenght(s) - 1, s));
