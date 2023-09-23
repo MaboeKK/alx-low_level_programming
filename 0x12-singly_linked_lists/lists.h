@@ -1,5 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
+#include "stddef.h"
 
 /**
  * struct list_s - Our linked list data structure.
